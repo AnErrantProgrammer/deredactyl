@@ -40,6 +40,8 @@ canvas.addEventListener("drop", function(evt) {
 
 canvas.addEventListener('mousedown', selectRedaction);
 
+img.src = "test.png";
+
 function selectRedaction(event) {
     var x = event.layerX;
     var y = event.layerY;
