@@ -43,8 +43,10 @@ canvas.addEventListener('mousedown', selectRedaction);
 img.src = "test.png";
 
 function selectRedaction(event) {
-    var x = event.layerX;
-    var y = event.layerY;
+    var x = event.offsetX;
+    var y = event.offsetY;
+    // debugger;
+    console.log(x, y)
     var bounds = getRedactionBoundaries(x, y);
 
     if (bounds.width > 10 && bounds.height > 3) {
